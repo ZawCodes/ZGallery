@@ -1,0 +1,32 @@
+.search-container {
+  margin-bottom: 160px;
+  .search {
+    display: flex;
+    justify-content: center;
+    > input {
+      width: 540px;
+      height: 46px;
+      padding: 1rem;
+      box-sizing: border-box;
+      border: 1px solid #eeeeee;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      &::placeholder {
+        color: #a5a5a5;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    > button {
+      background-color: #1780e1;
+      width: 60px;
+      border: none;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
