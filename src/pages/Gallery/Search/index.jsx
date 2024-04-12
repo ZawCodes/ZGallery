@@ -2,12 +2,17 @@ import React from "react";
 import search from "./assets/search.png";
 import "./index.scss";
 
-const index = () => {
+const index = ({ searchKey, setSearchKey }) => {
   return (
     <>
       <div className="search-container">
         <div className="search">
-          <input type="text" placeholder="Search ..." />
+          <input
+            value={searchKey}
+            onChange={(e) => setSearchKey(e.target.value)}
+            type="text"
+            placeholder="Search ..."
+          />
           <button>
             <img src={search} alt="search" />
           </button>

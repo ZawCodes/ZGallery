@@ -39,6 +39,11 @@
         height: 100%;
         object-fit: cover;
       }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: white;
+      }
       .image-card {
         width: 80vw;
         height: 50vh;
@@ -72,6 +77,26 @@
               color: #6a6a6a;
               font-size: 14px;
             }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .detail {
+      .swiper-container {
+        .swiper-button-prev,
+        .swiper-button-next {
+          &::after {
+            font-size: 1.5rem;
+          }
+        }
+        .image-card {
+          min-height: 50vh;
+          height: auto;
+          flex-direction: column;
+          .info {
+            padding: 20px;
           }
         }
       }

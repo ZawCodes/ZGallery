@@ -1,4 +1,5 @@
 import "./reset.css";
+import GlobalStates from "globalStates";
 import Header from "pages/Header";
 import { Suspense } from "react";
 import { lazy } from "react";
@@ -9,15 +10,17 @@ const Gallery = lazy(() => import("pages/Gallery"));
 function App() {
   return (
     <>
-      <Header />
-      <BrowserRouter basename="/">
-        <Suspense fallback={<>Loading</>}>
-          <Routes>
-            <Route path="/gallery/*" element={<Gallery />} />
-            <Route path="" element={<Navigate to="/gallery" />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
+      <GlobalStates>
+        <Header />
+        <BrowserRouter basename="/">
+          <Suspense fallback={<></>}>
+            <Routes>
+              <Route path="/gallery/*" element={<Gallery />} />
+              <Route path="" element={<Navigate to="/gallery" />} />
+            </Routes>
+          </Suspense>
+        </BrowserRouter>
+      </GlobalStates>
     </>
   );
 }

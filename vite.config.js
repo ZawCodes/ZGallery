@@ -21,6 +21,7 @@ export default defineConfig({
       components: "/src/components",
       pages: "/src/pages",
       utils: "/src/utils",
+      globalStates: "/src/globalStates",
     },
   },
 });

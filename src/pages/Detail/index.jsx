@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import images from "utils/images.js";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,7 +17,13 @@ const index = () => {
   let { id } = useParams();
 
   return (
-    <div className="overlay">
+    <motion.div
+      className="overlay"
+      initial={{ y: "100vh" }}
+      animate={{ y: 0 }}
+      exit={{ y: "100vh" }}
+      transition={{ duration: 0.5 }}
+    >
       <img
         src={cancel}
         alt="close"
@@ -26,7 +33,12 @@ const index = () => {
         }}
       />
       <div className="detail">
-        <div className="swiper-container">
+        <motion.div
+          className="swiper-container"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <Swiper
             ref={swiperRef}
             initialSlide={id - 1}
@@ -44,20 +56,20 @@ const index = () => {
                   <div className="info">
                     <div className="info-item">
                       <h3>Tags</h3>
-                      <p>#cats #pets #animals #cute</p>
+                      <p>{image.tags}</p>
                     </div>
                     <div className="info-item">
                       <h3>Uploaded Date</h3>
-                      <p>2021-09-12</p>
+                      <p>{image.uploaded_date}</p>
                     </div>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

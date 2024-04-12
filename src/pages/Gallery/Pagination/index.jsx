@@ -1,16 +1,31 @@
 import React from "react";
 import "./index.scss";
 
-const Index = () => {
+const Pagination = ({ imagesPerPage, totalImages, paginate, currentPage }) => {
+  const totalPages = Math.ceil(totalImages / imagesPerPage);
+
+  const pageNumbers = [];
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(i);
+  }
+
   return (
     <div className="pagination">
       <div className="pagination-container">
-        <p>prev</p>
-        <div className="pages">1 OF 3</div>
-        <p>next</p>
+        <button onClick={() => paginate(Math.max(1, currentPage - 1))}>
+          prev
+        </button>
+
+        <div className="pages">
+          {currentPage} of {totalPages}
+        </div>
+
+        <button onClick={() => paginate(Math.min(totalPages, currentPage + 1))}>
+          next
+        </button>
       </div>
     </div>
   );
 };
 
-export default Index;
+export default Pagination;

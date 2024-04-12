@@ -19,8 +19,16 @@
       font-size: 14px;
       font-weight: bold;
     }
-    > p {
-      color: #aaaaaa;
+    > button {
+      background-color: white;
+      border: none;
+      color: #1780e1;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
