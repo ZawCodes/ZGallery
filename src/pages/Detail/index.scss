@@ -1,0 +1,80 @@
+.overlay {
+  background-color: #177fe0cc;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  .cancel {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .detail {
+    height: 100vh;
+    position: relative;
+
+    .swiper-container {
+      height: 100%;
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        transition: 0.25s;
+        text-align: center;
+        font-size: 18px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .image-card {
+        width: 80vw;
+        height: 50vh;
+        background-color: white;
+        display: flex;
+
+        border-radius: 4px;
+        .image-container {
+          flex: 0 1 60%;
+          padding: 10px;
+          box-sizing: border-box;
+          img {
+            width: 100%;
+          }
+        }
+        .info {
+          flex: 0 1 40%;
+          display: flex;
+          flex-direction: column-reverse;
+          padding: 40px;
+          box-sizing: border-box;
+          .info-item {
+            text-align: left;
+            margin-bottom: 2rem;
+            > h3 {
+              color: #1780e1;
+              font-size: 1rem;
+              margin-bottom: 4px;
+            }
+            p {
+              color: #6a6a6a;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

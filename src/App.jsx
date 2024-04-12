@@ -13,7 +13,8 @@ function App() {
       <BrowserRouter basename="/">
         <Suspense fallback={<>Loading</>}>
           <Routes>
-            <Route path="/" element={<Gallery />} />
+            <Route path="/gallery/*" element={<Gallery />} />
+            <Route path="" element={<Navigate to="/gallery" />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
