@@ -21,8 +21,12 @@
       &:focus {
         outline: none;
       }
+      &:hover {
+        background-color: #f5f5f5;
+      }
     }
     > button {
+      cursor: pointer;
       background-color: #1780e1;
       width: 60px;
       border: none;

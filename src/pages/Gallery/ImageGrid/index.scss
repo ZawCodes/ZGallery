@@ -2,10 +2,10 @@
   display: grid;
   gap: 0.75%;
   &.big {
-    grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
   }
   &.small {
-    grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
   }
 
   .grid-item {

@@ -185,6 +185,60 @@ const images = [
     uploaded_date: "2024-01-09",
     tags: "#cute #cats #photography",
   },
+  {
+    id: 32,
+    src: "https://www.fourpaws.com/-/media/Project/OneWeb/FourPaws/Images/articles/cat-corner/do-cats-need-baths/cat-in-towel-cropped.jpg",
+    uploaded_date: "2024-04-13",
+    tags: "#cats #bathing #pets",
+  },
+  {
+    id: 33,
+    src: "https://images.contentstack.io/v3/assets/blt6f84e20c72a89efa/bltd23d698154616afc/63c73a89a362596b80751065/img-cat-whiskers-101-header.jpg",
+    uploaded_date: "2024-04-13",
+    tags: "#cats #whiskers #photography",
+  },
+  {
+    id: 34,
+    src: "https://i.cbc.ca/1.7046282.1701447456!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/humane-society.jpg",
+    uploaded_date: "2024-04-13",
+    tags: "#cats #shelter #photography",
+  },
+  {
+    id: 35,
+    src: "https://idsb.tmgrup.com.tr/ly/uploads/images/2022/05/07/thumbs/800x531/203831.jpg",
+    uploaded_date: "2024-04-13",
+    tags: "#cats #playing #outdoor",
+  },
+  {
+    id: 36,
+    src: "https://www.thesprucepets.com/thmb/uQnGtOt9VQiML2oG2YzAmPErrHo=/5441x0/filters:no_upscale():strip_icc()/all-about-tabby-cats-552489-hero-a23a9118af8c477b914a0a1570d4f787.jpg",
+    uploaded_date: "2024-04-13",
+    tags: "#cats #tabby #photography",
+  },
+  {
+    id: 37,
+    src: "https://www.animalfriends.co.uk/siteassets/media/images/article-images/cat-articles/51_afi_article1_the-secret-language-of-cats.png",
+    uploaded_date: "2024-04-13",
+    tags: "#cats #communication #photography",
+  },
+  {
+    id: 38,
+    src: "https://www.pawschicago.org/fileadmin/_processed_/8/c/csm_garden1-1024x685_0438a114ad.jpg",
+    uploaded_date: "2024-04-13",
+    tags: "#cats #garden #photography",
+  },
+  {
+    id: 39,
+    src: "https://weareallaboutcats.com/wp-content/uploads/2023/02/AdobeStock_345481931-1024x683.jpeg",
+    uploaded_date: "2024-04-13",
+    tags: "#cats #relaxing #photography",
+  },
+  {
+    id: 40,
+    src: "https://www.usatoday.com/gcdn/authoring/authoring-images/2023/11/02/USAT/71425670007-getty-images-1310147575.jpg",
+    uploaded_date: "2024-04-13",
+    tags: "#cats #curious #photography",
+  },
 ];
 
 export default images;

@@ -13,7 +13,7 @@ const Index = () => {
   const { sort } = useGlobalStates();
   const [currentPage, setCurrentPage] = useState(1);
   const [searchKey, setSearchKey] = useState("");
-  const imagesPerPage = 20;
+  const imagesPerPage = 30;
 
   const indexOfLastImage = currentPage * imagesPerPage;
   const indexOfFirstImage = indexOfLastImage - imagesPerPage;

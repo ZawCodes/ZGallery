@@ -1,7 +1,6 @@
 import React from "react";
 import { useGlobalStates } from "globalStates";
 import logo from "./assets/ZGallery.png";
-import add from "./assets/add.png";
 import filter_icon from "./assets/filter.png";
 import filter_reverse from "./assets/filter_reverse.png";
 import view_icon from "./assets/view.png";
@@ -19,12 +18,8 @@ const Index = () => {
       <nav>
         <ul>
           <li>
-            <div className="settings">
-              <img src={add} alt="Add" />
-            </div>
-          </li>
-          <li>
             <div
+              title="Sort by date"
               className="settings"
               onClick={() =>
                 sort.setState((prev) => (prev === "asc" ? "desc" : "asc"))
@@ -38,6 +33,7 @@ const Index = () => {
           </li>
           <li>
             <div
+              title="Change view"
               className="settings"
               onClick={() =>
                 view.setState((prev) => (prev === "big" ? "small" : "big"))
